@@ -1,0 +1,53 @@
+.paper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 800px;
+    margin: auto;
+}
+.title {
+    input {
+        font-size: 42px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    div {
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.image {
+    width: 100%;
+}
+
+
+.editor {
+    margin: 30px -30px;
+
+    :global {
+        .cm-s-easymde {
+            border: 0;
+            font-size: 22px;
+        }
+        .editor-toolbar {
+            border: 0;
+            background-color: rgb(0 0 0 / 2%);
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+
+    button {
+        margin-right: 15px;
+        margin-bottom: 40px;
+    }
+}
